@@ -5,9 +5,9 @@
 }
 
 :root {
-    --primary-color: #38fc59;
+    --primary-color: #0748fa;
     --secondary-color: #61594d;
-    --tertiary-color: #831111d5;
+    --tertiary-color: #272424d5;
 }
 
 body {
@@ -66,7 +66,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background: var(--primary-color);
+    background: var(--tertiary-color);
     color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
@@ -74,7 +74,7 @@ header nav ul li a:hover {
 
 /* footer section */
 footer {
-    background: var(--primary-color);
+    background: var(--tertiary-color);
     width: 100%;
     padding: 40px 35px;
     display: flex;
@@ -104,30 +104,166 @@ section {
 }
 /* footer end */
 
-.about, .projects, .contact  {
+.about, .project, .contact  {
     margin: 20px;
+    border-bottom: solid var(--primary-color);
 }
 
 /* about section */
-.about p {
-
+.me {
+    height: 200px;
 }
 
 
 /* about section end */
 
 /* projects */
-.imag {
-    width: 150px
-    
+.project, h2 {
+
 }
 
+.imag , .image2 {
+display: flex;
+ flex: inherit;
+ justify-content: space-between;  
+ height: 250px;
+}
 
+.pic {
+  width: 100%;
+  height: 500px;
+  background-image: url(./assets/css/images/hero-bg.jpg);
+  
+
+
+}
 
 /* projects end */
 
 /* contact info */
+ .contact2 {
+    display: flex;
+    flex: inherit;
+    justify-content: space-between;
+    
+ }
 
-
-
+ .contact2, p {
+     font-weight: bold;
+ }
 /* contact info end */
+@media  screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header  {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header  {
+        font-size: 20px;
+    }
+
+    header :hover {
+        background: var(--primary-color);
+        color: var(--secondary-color);
+        border-radius: 15px;
+        text-shadow: none;
+    }
+
+
+
+    .project, .imag {
+        width: 100%;
+    }
+
+    .hero-cta {
+        text-align: center;
+    }
+
+    .section-title {
+        width: 80%;
+    }
+
+    .trainer {
+        flex: 0 70%;
+    }
+
+    .contact-info iframe {
+        flex: 1 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+
+    .step h3 {
+        flex: 1 100%;
+        text-align: center;
+    }
+
+    .step-info {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .step-img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .step-text {
+        flex: 100%;
+    }
+}
+
+@media screen and (max-width: 100px) {
+    
+    .header {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .hero-form button:hover {
+        background-color: var(--tertiary-color);
+    }
+
+    .about, .project {
+        width: 95%;
+    }
+
+    .contact2, .about .project {
+        width: 100%;
+    }
+
+    .project {
+        flex: 0 100%;
+    }
+
+    .contact2, .about .project {
+        text-align: center;
+    }
+
+    .contact-info > * {
+        flex: 0 100%;
+    }
+
+    .contact-form {
+        order: 3;
+    }
+}
