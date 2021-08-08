@@ -82,18 +82,9 @@ footer {
     flex-wrap: wrap;
 }
 
-footer h2 {
-    
-    color: var(--secondary-color);
-    font-size: 30px;
-    margin: 0;
-}
 
-footer div {
-    
-    line-height: 1.5;
-    text-align: right;
-}
+
+
 
 footer a {
     color: var(--secondary-color);    
@@ -114,13 +105,9 @@ section {
     height: 200px;
 }
 
-
 /* about section end */
 
 /* projects */
-.project, h2 {
-
-}
 
 .imag , .image2 {
 display: flex;
@@ -133,9 +120,6 @@ display: flex;
   width: 100%;
   height: 500px;
   background-image: url(./assets/css/images/hero-bg.jpg);
-  
-
-
 }
 
 /* projects end */
@@ -232,38 +216,4 @@ display: flex;
     }
 }
 
-@media screen and (max-width: 100px) {
-    
-    .header {
-        width: 100%;
-        border-radius: 10px;
-    }
 
-    .hero-form button:hover {
-        background-color: var(--tertiary-color);
-    }
-
-    .about, .project {
-        width: 95%;
-    }
-
-    .contact2, .about .project {
-        width: 100%;
-    }
-
-    .project {
-        flex: 0 100%;
-    }
-
-    .contact2, .about .project {
-        text-align: center;
-    }
-
-    .contact-info > * {
-        flex: 0 100%;
-    }
-
-    .contact-form {
-        order: 3;
-    }
-}
