@@ -18,7 +18,7 @@ As a learing full stack developer I wanted a project to practice my CSS and HTML
 # Contributors 
 Cameron Charlesworth
 
-# Technologies
+# Technology
 HTML and CSS
 
 # Contact
